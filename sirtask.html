@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            display: flex;
+        }
+
+        .images-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 235px;
+            position: relative;
+        }
+
+        .table-wrapper {
+            width: 100%;
+            margin-right: 30px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            position: relative;
+            flex: 1;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-right {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .header-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .header-item {
+            text-align: center;
+        }
+
+        .header-item p {
+            margin: 0;
+        }
+
+        .header-item .main {
+            font-weight: bold;
+        }
+
+        .customer-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .customer-details p {
+            margin: 5px 0;
+        }
+
+        /* New Section CSS */
+        .design-table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            border-top: 1px solid black;
+        }
+
+        .design-table th,
+        .design-table td {
+            border: none;
+            margin-left: 18px;
+            vertical-align: top; /* Ensures images and text align vertically in their respective columns */
+        }
+
+        .design-table td:nth-child(2) {
+            border-left: 1px solid black; /* Add left border to the 2nd column */
+        }
+
+        .images-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left; /* Align text to the left */
+    padding-left: 0px; /* Optional: Add padding for better spacing */
+}
+
+.images-column p {
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    direction: ltr;
+    position: relative;
+    margin-left: 530px;
+    margin-top: 10px;
+     /* Add this to maintain proper flow for Urdu text */
+}
+.images-column .ww{
+    margin-left: 30px;
+    margin-bottom: -53px;
+}
+    .images-column .gg{
+        margin-left: 30px;
+        margin-top: 60px;
+        margin-bottom: -89px;
+    }
+    .images-column .dd{
+        margin-left: 550px;
+        margin-top: -59px;
+        font-size: 14px;
+        
+    }
+    .images-column .oo{
+    
+        margin-left: 25px;
+        margin-bottom: 51px;
+        margin-top: -96px;
+        font-size: 13px;
+        vertical-align: middle;
+        
+    }
+    .images-column .jj{
+        margin-left: 51px;
+        margin-top: -31px;
+        font-size: 13px;
+        vertical-align: middle;
+         
+    }
+    .images-column .hh{
+        margin-left: 95px;
+        margin-top: -15px;
+        
+       
+         
+    }
+    .images-column .ff{
+        margin-left: 52px;
+    margin-top: -70px;
+    margin-bottom: 35px;
+       
+         
+    }
+    .images-column .mm{
+        margin-left: 52px;
+    margin-top: 54px;
+    margin-bottom: -56px;
+    margin-left: 81px;
+}
+.images-column .cc{
+    margin-left: 39px;
+    vertical-align: middle;
+    margin-bottom: 11px;
+    margin-top: -21px;
+
+}
+.images-column .ii{
+    margin-left: 32px;
+    margin-bottom: -11px;
+    margin-top: -12px;
+    
+}
+.images-column .xx{
+    margin-left: 79px;
+    margin-bottom: 3px;
+    font-size: 38px;
+    margin-top: -42px;
+    
+}
+.images-column .ss{
+    margin-left: 83px;
+    margin-bottom: -59px;
+    margin-top: 39px;
+    
+}
+.images-column .qq{
+    margin-left: 23px;
+    margin-top: -79px;
+    vertical-align: middle;
+    font-size: 13px;
+    
+    
+    
+}
+.images-column .zz{
+    margin-left: 60px;
+    margin-top: -10px;
+    vertical-align: middle;
+    
+    
+    
+}
+.images-column .jk{
+    margin-left: 60px;
+    margin-top: -10px;
+    
+    
+    
+}
+.images-column .hello{
+   margin-left: 101px;
+    margin-top: 1px;
+    margin-bottom: -35px;
+}
+.images-column .lk{
+    margin-left: 29px;
+    margin-top: 59px;
+    margin-bottom: -30px;
+}
+.images-column .lmn{
+    margin-left: 68px;
+    margin-top: -92px;
+    margin-bottom: 70px;
+}
+.images-column .rst{
+    margin-left: 61px;
+    margin-top: -86px;
+    margin-bottom: 70px;
+    vertical-align: middle;
+}
+
+.images-column .opq{
+    margin-left: 68px;
+    margin-top: -62px;
+    margin-bottom: -30px;
+    vertical-align: middle;
+}
+.images-column .new{
+    margin-left: 534px;
+    margin-top: -43px;
+    margin-bottom: 18px;
+}
+.images-column .new1{
+    margin-left: 534px;
+    margin-top: -101px;
+    margin-bottom: 61px;
+}
+.images-column .new2{
+    margin-left: 534px;
+    margin-top: -138px;
+    margin-bottom: 61px;
+}
+    
+    
+    
+
+         
+    
+        .images-column img {
+            width: 100px;
+            height: 135px;
+            margin-top: 10px;
+        }
+
+        .data-column {
+            border-left: 2px solid black; /* Left border touching the 2nd column */
+            padding-left: 0;
+            padding-left: 0; /* Remove any left padding */
+             /* Ensures it touches the border */
+        }
+
+        .data-column p {
+            padding-bottom: 3px; /* Small space between text and border */
+            border-bottom: 1px solid black; /* Add a small horizontal line below each paragraph */
+            margin: 0; /* Remove margin to ensure the line is right below the text */
+            max-width: 100px;
+            margin-bottom: 50px;
+            margin-top: 10px; /* Optional: control the length of the line */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Existing content (Header and Customer Details) -->
+    <div class="table-wrapper">
+        <div class="header">
+            <div class="header-left">
+                <div class="header-item">
+                    <p class="main">Bok No:</p>
+                </div>
+                <div class="header-item">
+                    <p>379680</p>
+                </div>
+            </div>
+            <div class="header-center">
+                <div class="header-item">
+                    <p class="main">Oriental</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-item">
+                    <p class="main"><strong>Total &nbsp; &nbsp; &nbsp; &nbsp;</strong>0</p>
+                </div>
+                <div class="header-item">
+                    <p class="main"><strong>Adv &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong>0</p>
+                </div>
+                <div class="header-item">
+                    <p class="main"> <strong>Balance &nbsp; &nbsp; &nbsp; </strong>0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="customer-details">
+            <div class="left">
+                <p><strong>22-04-2024 &nbsp; &nbsp;</strong><strong> تاریخ بکنگ</strong></p>
+                <p><strong>22-04-2024 &nbsp; &nbsp;</strong> تاریخ واپسی</p>
+            </div>
+            <div class="right">
+                <p><strong style="margin-right: 7px;">Customer No:</strong> 47847</p>
+                <p style="margin-left: 105px ;margin-top: 25px; margin-right: -10px;"><strong> احمد شاہ</strong></p>
+                <p style="margin-left: 0px; margin-top: 20px; margin-right: 100px;"><strong>تعداد:</strong> 1</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Table Section with Images and Data -->
+    <table class="design-table">
+        <tr>
+            <!-- First column: Images -->
+            <td class="images-column">
+                <p>پتی میں 5 کاج</p>
+                <h1 class="ww">1</h1>
+                <p class="gg"> آدھا</p>
+               <!-- Added text here -->
+                <img src="./icon/outline -02.png" alt="Image 1">
+                <p class="dd">پتی میں 5 کاج</p>
+               
+                <img src="./icon/outline -03.png" alt="Image 1">
+                
+                <p class="oo"><span>2</span><sup>1</sup>&frasl;<sub>2</sub></p>
+                <p class="jj"><span>9 </span><sup>1</sup>&frasl;<sub>2</sub></p>
+                <p class="hh">سیدھا ڈبل کج  </p>
+                <p class="hello"> کاف پلٹ نہیں </p>
+                <p class="new">پتی میں 5 کاج</p>
+
+                <img src="./icon/outline -05.png" alt="Image 1">
+                <p class="new1">پتی میں 5 کاج</p>
+                <p class="ff">2</p>
+                <p class="mm">8</p>
+                <img src="./icon/outline -06.png" alt="Image 1">
+                <p class="new2">پتی میں 5 کاج</p>
+                <p class="cc"><span>5</span><sup>1</sup>&frasl;<sub>2</sub></p>
+                <p class="ii"> <span>5</span><sup>1</sup>&frasl;<sub>2</sub></p>
+                <p class="xx"> &uarr;</p>
+                <p class="ss">شلوار جیب</p>
+                <img src="./icon/outline -07.png" alt="Image 1">
+                <p class="qq"><span>24</span><sup>1</sup>&frasl;<sub>2</sub></p>
+                <p class="zz"><span>20</span><sup>1</sup>&frasl;<sub>2</sub></p>
+                <p class="jk"></p>
+                <p class="lk">اوپر پٹی</p>
+                <img src="./icon/outline -08.png" alt="Image 1">
+                <p class="lmn"><span>14</span><sup>1</sup>&frasl;<sub>2</sub></p>
+               <p class="rst">________</p> 
+                <p class="opq"><span>1</span><sup>1</sup>&frasl;<sub>2</sub></p>
+            </td>
+
+            <!-- Second column: Data (Urdu and values) -->
+            <td class="data-column">
+                <p style="font-size: 17px; vertical-align: middle;" ><strong>لمبائی</strong> &nbsp; &nbsp;<span>43</span><sup>1</sup>&frasl;<sub>2</sub></p>
+                <p style="font-size: 15px; vertical-align: middle;"><strong>تیرہ</strong> &nbsp; &nbsp;<span>18</span><sup>1</sup>&frasl;<sub>2</sub></p>
+                <p style="font-size: 17px; vertical-align: middle;"><strong>بازو</strong>&nbsp; &nbsp; <span>24</span><sup>1</sup>&frasl;<sub>2</sub></p>
+                <p style="font-size: 17px; vertical-align: middle;"><strong>چاہتی</strong>&nbsp; &nbsp;<span>38</span><sup>1</sup>&frasl;<sub>2</sub></p>
+                <p style="font-size: 17px; vertical-align: middle;"><strong>کمر</strong>&nbsp; &nbsp; <span>24</span><sup>1</sup>&frasl;<sub>2</sub></p>
+                <p style="font-size: 17px; vertical-align: middle;"><strong>دامن</strong>&nbsp; &nbsp; <span>25</span><sup>1</sup>&frasl;<sub>2</sub></p>
+                <p style="font-size: 17px; vertical-align: middle;"><strong>کالر</strong> &nbsp &nbsp;<span>16</span><sup>1</sup>&frasl;<sub>2</sub></p>
+                <p style="font-size: 17px; vertical-align: middle;"><strong>شلوار</strong>&nbsp; &nbsp;<span>40</span><sup>1</sup>&frasl;<sub>2</sub></p>
+                <p style="font-size: 17px; vertical-align: middle;"><strong>پانچہ</strong>&nbsp; &nbsp;<span>8</span><sup>1</sup>&frasl;<sub>2</sub></p>
+            </td>
+        </tr>
+        
+    </table>
+    <p style="text-align: center; margin-top: -20px;">kuchi Bazar Peshawar 0912561254</p>
+
+</body>
+
+</html>
